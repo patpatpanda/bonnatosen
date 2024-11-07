@@ -1,0 +1,44 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f5c000; /* Den gula färgen */
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.heroText {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #e68a00;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.heroButton:hover {
+  background-color: #d17400;
+}
