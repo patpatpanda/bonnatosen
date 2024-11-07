@@ -1,27 +1,65 @@
+/* Hero.module.css */
+
 .heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(224, 174, 22, 0.2), rgba(255, 255, 255, 0.9)), 
+              url('/images/farm.jpg') center/cover no-repeat;
+  border-radius: 10px;
   text-align: center;
-  background-color: #f5c000; /* Den gula färgen */
-  padding: 3rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  animation: fadeInZoom 1s ease forwards; /* Fade-in zoom animation */
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .heroTitle {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #333;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish orange content box */
+.contentBox {
+  background-color: #e0ae16; /* Brand orange */
+  padding: 2.5rem;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 650px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  animation: slideIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heroText {
-  font-size: 1.25rem;
-  color: #333;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: #fff; /* Text color inside the orange box */
 }
 
 .buttonContainer {
@@ -30,15 +68,19 @@
 }
 
 .heroButton {
+  display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #e68a00;
-  color: #fff;
-  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .heroButton:hover {
-  background-color: #d17400;
+  background-color: #ffffff;
+  color: #e0ae16;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
