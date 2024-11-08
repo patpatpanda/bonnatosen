@@ -52,7 +52,7 @@ export default function BonnatosensMackor() {
             <h3>Veckans Soppa</h3>
             <p>En välsmakande soppa som varierar varje vecka. Fråga gärna om dagens special!</p>
           </div>
-        </div>
+        </div> 
       </section>
 
       {/* Catering och sociala medier */}
@@ -61,7 +61,7 @@ export default function BonnatosensMackor() {
         <p>
           Vi erbjuder Bonnatösens Mackor som catering för ditt event! Kontakta oss för mer information.
         </p>
-        <Link href="/contact" className={styles.cateringButton}>Beställ Catering</Link>
+        
         <p className={styles.socialMediaText}>Följ oss på sociala medier för senaste nyheterna och öppettider!</p>
         <div className={styles.socialIcons}>
           <a href="https://www.instagram.com/bonnatosensmackor" target="_blank" rel="noopener noreferrer">@Bonnatosensmackor</a>
