@@ -44,7 +44,7 @@ export default function Hero() {
           <Link href="/mackor">
             <button className={styles.ctaButton}>Bonnatösens Mackor</button>
           </Link>
-          <Link href="/events">
+          <Link href="/Catering">
             <button className={styles.ctaButton}>Bonnatösens Event & Catering</button>
           </Link>
         </div>
