@@ -27,7 +27,7 @@ export default function Hero() {
         loop
         className={styles.backgroundVideo}
       >
-        <source src="/images/dust.mp4" type="video/mp4" />
+        <source src="/images/set.mp4" type="video/mp4" />
         Din webbläsare stöder inte videouppspelning.
       </video>
 
