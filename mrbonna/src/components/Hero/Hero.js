@@ -8,12 +8,19 @@ export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true);
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 300); // Fördröjning på 300ms för mjukare laddning
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className={`${styles.heroContainer} ${isVisible ? styles.fadeIn : ''}`}>
-      <h1 className={styles.heroTitle}>Välkommen till Bonnatösen!</h1>
+      <div className={styles.titleContainer}>
+      
+        <h1 className={styles.heroTitle}>Välkommen till Bonnatösen!</h1>
+       
+      </div>
       <div className={styles.contentBox}>
         <p className={styles.heroText}>
           Vår grundidé: Bonnatösen ska vara lite bonnigt, ganska amerikanskt med en country vibe och vi ska servera riktigt god mat som vi själva älskar.

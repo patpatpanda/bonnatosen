@@ -1,0 +1,253 @@
+/* BonnatosensBurgare.module.css */
+
+.burgareContainer {
+  font-family: 'Courier New', Courier, monospace;
+  color: #4f4f4f;
+}
+
+/* Hero-sektion med ikon */
+.heroSection {
+  background-color: #ffe4c4; /* Ljus pastellorange för retro känsla */
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #4f4f4f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #ffddc1; /* Lätt avdelning under hero */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroIcon {
+  width: 200px;
+  height:100px;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-family: 'Comic Sans MS', cursive;
+  color: #ff6699;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Diskret skugga */
+}
+
+.heroText {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #4f4f4f;
+}
+
+/* Historien-sektion */
+.historySection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background-color: #fef7e1;
+}
+
+.historyText {
+  flex: 1;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.historyImage {
+  flex: 1;
+  max-width: 100%;
+  height: 500px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Meny-sektion */
+.menuSection {
+  background-color: #ffe4c4;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menuTitle {
+  font-size: 2.5rem;
+  color: #4f4f4f;
+}
+
+.menuItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menuItem {
+  width: 280px;
+  padding: 2rem;
+  background-color: #ffddc1;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menuItem:hover {
+  transform: translateY(-5px);
+}
+
+.menuItem h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.menuItem p {
+  font-size: 1.1rem;
+}
+
+/* Catering och sociala medier */
+.cateringSection {
+  background-color: #f4a261;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.cateringButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff6699;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.cateringButton:hover {
+  background-color: #e76f51;
+}
+
+.socialMediaText {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.socialIcons a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.socialIcons a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Responsiv Design ========== */
+
+/* Anpassning för tabletter och mindre skärmar */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .heroIcon {
+    width: 200px;
+    height: 100px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+  }
+
+  .historySection {
+    flex-direction: column; /* Stapla text och bild vertikalt */
+    align-items: center;
+  }
+
+  .historyText,
+  .historyImage {
+    flex: none;
+    width: 100%;
+  }
+
+  .menuTitle {
+    font-size: 2rem;
+  }
+
+  .menuItems {
+    gap: 1rem;
+  }
+
+  .menuItem {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Anpassning för mobilskärmar */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 3rem 1rem;
+  }
+
+  .heroIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  .historySection {
+    padding: 2rem 1rem;
+  }
+
+  .historyText {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .menuSection {
+    padding: 3rem 1rem;
+  }
+
+  .menuTitle {
+    font-size: 1.8rem;
+  }
+
+  .menuItem {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .menuItem h3 {
+    font-size: 1.5rem;
+  }
+
+  .menuItem p {
+    font-size: 0.9rem;
+  }
+
+  .cateringSection {
+    padding: 2rem 1rem;
+  }
+
+  .cateringButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
