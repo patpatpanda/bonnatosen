@@ -61,7 +61,15 @@ export default function BonnatosensMackor() {
         <p>
           Vi erbjuder Bonnatösens Mackor som catering för ditt event! Kontakta oss för mer information.
         </p>
-        
+       
+      <section className={styles.bookingSection}>
+        <h2 className={styles.sectionTitle}>Boka Oss</h2>
+        <p className={styles.bookingInfo}>
+          För att boka catering eller få en offert, vänligen kontakta oss via e-post eller telefon. Vi arbetar tillsammans med dig för att skapa en meny som passar just ditt event.
+        </p>
+        <p className={styles.contactInfo}>📧 Email: catering@bonnatosen.se</p>
+        <p className={styles.contactInfo}>📞 Telefon: 070-123 4567</p>
+      </section>
         <p className={styles.socialMediaText}>Följ oss på sociala medier för senaste nyheterna och öppettider!</p>
         <div className={styles.socialIcons}>
           <a href="https://www.instagram.com/bonnatosensmackor" target="_blank" rel="noopener noreferrer">@Bonnatosensmackor</a>
