@@ -1,0 +1,64 @@
+/* components/Footer/Footer.module.css */
+
+.footer {
+  background-color: #FFEBCC;
+  padding: 2rem 1.5rem;
+  color: #4f4f4f;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactInfo,
+.navLinks,
+.socialMedia {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contactInfo h3,
+.navLinks h3,
+.socialMedia h3 {
+  font-size: 1.4rem;
+  color: #FF7E5F;
+  margin-bottom: 1rem;
+}
+
+.contactInfo p,
+.navLinks a,
+.socialMedia a {
+  font-size: 1rem;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+.navLink,
+.socialLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLink:hover,
+.socialLink:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  color: #4f4f4f;
+}
+.navLinks,
+.socialMedia {
+  display: flex;
+  flex-direction: column; /* Gör länkarna vertikala */
+  gap: 0.5rem; /* Mellanrum mellan varje länk */
+}

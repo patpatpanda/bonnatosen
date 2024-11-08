@@ -1,0 +1,152 @@
+/* app/catering/CateringPage.module.css */
+
+/* app/catering/CateringPage.module.css */
+
+.cateringPageContainer {
+  margin-top: 6rem; /* Justera värdet efter behov */
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f9f1e9, #fef3d7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.pageDescription {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 700px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.menuSection, .bookingSection {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #b5651d;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menuItem {
+  background-color: #fffbf2;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menuItem h3 {
+  font-size: 1.5rem;
+  color: #d37f2c;
+  margin-bottom: 0.5rem;
+}
+
+.menuItem p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.bookingInfo, .contactInfo {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.contactInfo {
+  font-weight: bold;
+  color: #b5651d;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .pageDescription {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .menuItem h3 {
+    font-size: 1.4rem;
+  }
+
+  .menuItem p {
+    font-size: 0.95rem;
+  }
+
+  .bookingInfo, .contactInfo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.8rem;
+  }
+
+  .pageDescription {
+    font-size: 1.1rem;
+  }
+
+  .menuSection, .bookingSection {
+    padding: 1.5rem;
+  }
+
+  .menuItem {
+    padding: 1.2rem;
+  }
+
+  .menuItem h3 {
+    font-size: 1.3rem;
+  }
+
+  .menuItem p {
+    font-size: 0.9rem;
+  }
+
+  .bookingInfo, .contactInfo {
+    font-size: 1rem;
+  }
+}

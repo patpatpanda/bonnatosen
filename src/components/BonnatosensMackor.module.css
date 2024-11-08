@@ -1,0 +1,261 @@
+/* BonnatosensMackor.module.css */
+
+.mackorContainer {
+  font-family: 'Courier New', Courier, monospace;
+  color: #4f4f4f;
+}
+
+/* Hero-sektion med ikon */
+.heroSection {
+  background-color: #FFEBCC; /* Mjuk persika för en varm känsla */
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #4f4f4f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #FFDAB3; /* Subtil kontrastlinje */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroIcon {
+  width: 200px;
+  height: 100px;
+}
+/* BonnatosensMackor.module.css */
+
+.historyVideo {
+  flex: 1;
+  max-width: 600px; /* Sätter en maxbredd som motsvarar bildens ursprungliga storlek */
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrera videon */
+}
+
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-family: 'Comic Sans MS', cursive;
+  color: #FF7E5F; /* Dämpad korall för en vintage-känsla */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.heroText {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #4f4f4f;
+}
+
+/* Historien-sektion */
+.historySection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background-color: #FFF3E0; /* Ljus vanilj för mjuk bakgrund */
+}
+
+.historyText {
+  flex: 1;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.historyImage {
+  flex: 1;
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Meny-sektion */
+.menuSection {
+  background-color: #FFEBCC; /* Mjuk persika för ett enhetligt utseende */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menuTitle {
+  font-size: 2.5rem;
+  color: #4f4f4f;
+}
+
+.menuItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menuItem {
+  width: 280px;
+  padding: 2rem;
+  background-color: #FFE5CC; /* Ljus aprikos för lätt kontrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menuItem:hover {
+  transform: translateY(-5px);
+}
+
+.menuItem h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.menuItem p {
+  font-size: 1.1rem;
+}
+
+/* Catering och sociala medier */
+.cateringSection {
+  background-color: #FFCC99; /* Varm, dämpad orange för en inbjudande känsla */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.cateringButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #FF7E5F; /* Matchar hero-titelns korallfärg */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.cateringButton:hover {
+  background-color: #D9644A; /* Mörkare korall för hover-effekt */
+}
+
+.socialMediaText {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.socialIcons a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.socialIcons a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Responsiv Design ========== */
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .heroIcon {
+    width: 200px;
+    height: 100px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+  }
+
+  .historySection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .historyText,
+  .historyImage {
+    flex: none;
+    width: 100%;
+  }
+
+  .menuTitle {
+    font-size: 2rem;
+  }
+
+  .menuItems {
+    gap: 1rem;
+  }
+
+  .menuItem {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 3rem 1rem;
+  }
+
+  .heroIcon {
+    width: 200px;
+    height: 100px;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  .historySection {
+    padding: 2rem 1rem;
+  }
+
+  .historyText {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .menuSection {
+    padding: 3rem 1rem;
+  }
+
+  .menuTitle {
+    font-size: 1.8rem;
+  }
+
+  .menuItem {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .menuItem h3 {
+    font-size: 1.5rem;
+  }
+
+  .menuItem p {
+    font-size: 0.9rem;
+  }
+
+  .cateringSection {
+    padding: 2rem 1rem;
+  }
+
+  .cateringButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

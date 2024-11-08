@@ -1,0 +1,158 @@
+/* AboutUs.module.css */
+
+.aboutContainer {
+  font-family: 'Courier New', Courier, monospace;
+  color: #4f4f4f;
+}
+
+/* Hero-sektion */
+.heroSection {
+  background-color: #FFEBCC;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #4f4f4f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #FFDAB3;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  color: #FF7E5F;
+}
+
+.heroText {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #4f4f4f;
+}
+
+/* Historien-sektion */
+.historySection {
+  padding: 3rem 2rem;
+  background-color: #FFF3E0;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #4f4f4f;
+  margin-bottom: 1rem;
+}
+
+.historyText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team-sektion */
+.teamSection {
+  padding: 3rem 2rem;
+  background-color: #FFEBCC;
+  text-align: center;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ========== Responsiv Design ========== */
+
+/* För tablets och mindre skärmar */
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 5rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroText {
+    font-size: 1.3rem;
+  }
+
+  .historySection, .teamSection {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.3rem;
+  }
+
+  .historyText {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}
+
+/* För mobiler och mindre skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+  }
+
+  .historySection, .teamSection {
+    padding: 2rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .historyText {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .teamMembers {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* För små mobiler (max-width: 480px) */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 3rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .historySection, .teamSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .historyText {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .teamMembers {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
