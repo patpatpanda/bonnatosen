@@ -29,7 +29,7 @@ export default function BonnatosensMackor() {
     </p>
   </div>
   <img
-    src="/images/history-image.jpg" /* Ersätt med din bilds sökväg */
+    src="/images/lol.jpg" /* Ersätt med din bilds sökväg */
     alt="Bonnatösens Mackor historia"
     className={styles.historyImage}
   />
