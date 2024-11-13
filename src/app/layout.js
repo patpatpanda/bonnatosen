@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Header/Header"; // Importera Header-komponenten
-import Footer from "../components/Footer/Footer"; // Importera Header-komponenten
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Header /> {/* Lägg till Header här för att göra den global */}
        
         {children}
-        <Footer /> {/* Lägg till footern här */}
+        
       </body>
     </html>
   );

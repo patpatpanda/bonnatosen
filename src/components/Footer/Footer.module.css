@@ -1,17 +1,19 @@
 /* components/Footer/Footer.module.css */
 
 .footer {
-  background-color: #FFEBCC;
-  padding: 2rem 1.5rem;
-  color: #4f4f4f;
+  background: linear-gradient(135deg, #FF7E5F, #FFEBCC);
+  padding: 2.5rem 1.5rem;
+  color: #ffffff;
   text-align: center;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #FF7E5F;
 }
 
 .footerContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -22,43 +24,86 @@
 .socialMedia {
   flex: 1;
   min-width: 200px;
+  text-align: left;
 }
 
 .contactInfo h3,
 .navLinks h3,
 .socialMedia h3 {
-  font-size: 1.4rem;
-  color: #FF7E5F;
+  font-size: 1.5rem;
+  color: #FFE8D6;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .contactInfo p,
 .navLinks a,
 .socialMedia a {
-  font-size: 1rem;
-  color: #4f4f4f;
+  font-size: 1.1rem;
+  color: #FFF5E4;
   text-decoration: none;
+  line-height: 1.6;
 }
 
 .navLink,
 .socialLink {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navLink:hover,
 .socialLink:hover {
-  text-decoration: underline;
+  color: #FFE8D6;
+  transform: scale(1.1);
 }
 
 .copyright {
   font-size: 0.9rem;
-  margin-top: 1.5rem;
-  color: #4f4f4f;
+  margin-top: 2rem;
+  color: #FFF5E4;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 1rem;
 }
+
 .navLinks,
 .socialMedia {
   display: flex;
-  flex-direction: column; /* Gör länkarna vertikala */
-  gap: 0.5rem; /* Mellanrum mellan varje länk */
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footerContainer > div {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footerContainer > div:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+/* Footer.module.css */
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #ff7e5f;
 }

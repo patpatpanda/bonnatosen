@@ -1,18 +1,16 @@
 // app/page.js
 
 import Hero from '../components/Hero/Hero';
+import Footer from "../components/Footer/Footer"; // Importera Header-komponenten
 
-import About from '../components/About/About';
-import OpeningHours from '../components/OpeningHours/OpeningHours';
+
 
 export default function HomePage() {
   return (
     <div>
      
       <Hero />
-      <About />
-      <OpeningHours /> {/* Lägg till öppettider här */}
-      {/* Resten av innehållet på sidan */}
+    <Footer />
     </div>
   );
 }

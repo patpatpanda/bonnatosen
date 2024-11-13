@@ -8,8 +8,11 @@
   justify-content: center;
   color: #ffffff;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; /* Hindrar scroll för innehåll som är större än behållaren */
+  width: 100vw; /* Säkerställer att behållaren tar hela bredden på skärmen */
 }
+
+
 
 .backgroundVideo {
   position: absolute;

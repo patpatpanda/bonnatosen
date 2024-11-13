@@ -2,6 +2,7 @@
 
 import styles from './Footer.module.css';
 import Link from 'next/link';
+import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Importerar ikoner från react-icons
 
 export default function Footer() {
   return (
@@ -11,9 +12,7 @@ export default function Footer() {
         {/* Kontaktinformation */}
         <div className={styles.contactInfo}>
           <h3>Kontakta Oss</h3>
-          <p>Telefon: <a href="tel:+46123456789" className={styles.navLink}>+46 123 456 789</a></p>
           <p>Email: <a href="mailto:info@bonnatosen.se" className={styles.navLink}>info@bonnatosen.se</a></p>
-          <p>Adress: Gårdsvägen 12, 123 45 Lantstad</p>
         </div>
         
         {/* Navigeringslänkar */}
@@ -29,8 +28,14 @@ export default function Footer() {
         {/* Sociala Medier */}
         <div className={styles.socialMedia}>
           <h3>Följ Oss</h3>
-          <a href="https://www.instagram.com/bonnatosensburgare" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Instagram</a>
-          <a href="https://www.facebook.com/bonnatosen" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Facebook</a>
+          <div className={styles.socialIcons}>
+            <a href="https://www.instagram.com/bonnatosensburgare" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <FaInstagram /> Instagram
+            </a>
+            <a href="https://www.facebook.com/bonnatosen" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <FaFacebook /> Facebook
+            </a>
+          </div>
         </div>
       </div>
       <p className={styles.copyright}>
