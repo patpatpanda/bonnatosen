@@ -1,5 +1,3 @@
-/* src/components/Hero/Hero.module.css */
-
 .hero {
   position: relative;
   height: 100vh;
@@ -8,9 +6,9 @@
   justify-content: center;
   color: #ffffff;
   text-align: center;
-  overflow: hidden; /* Hindrar scroll för innehåll som är större än behållaren */
-  width: 100vw; /* Säkerställer att behållaren tar hela bredden på skärmen */
-  background: linear-gradient(135deg, #f9f9f9, #e6e6e6); /* Ljus och modern gradientbakgrund */
+  overflow: hidden;
+  width: 100vw;
+  background-image: url('/images/solen.jpeg'); /* Path to your background image */
   background-size: cover;
   background-position: center;
 }
@@ -21,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.7); /* Ljus overlay för subtil kontrast */
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
   z-index: 1;
 }
 
@@ -33,55 +31,82 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 200px;
 }
 
 .heroTitle {
   font-size: 3.5rem;
   font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Stronger shadow for better visibility */
   margin-bottom: 1rem;
-  color: #d19a66; /* Mjuk mörk färg för läsbarhet */
+  color: #ffcc33;
   text-transform: uppercase;
 }
 
 .subtitle {
   font-size: 1.25rem;
-  color: #555555; /* Ljusare grå för en mjuk känsla */
+  color: #f3f3f3; /* Softer white for a pleasant contrast */
   max-width: 90%;
   margin-bottom: 2rem;
   line-height: 1.6;
   text-align: center;
 }
 
-.buttonContainer {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .ctaButton {
+  position: relative;
   padding: 0.8rem 2rem;
-  background-color: #ffffff;
-  color: #555555;
-  border: 1px solid #cccccc;
-  border-radius: 30px;
-  cursor: pointer;
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+  color: #333333;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.ctaButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffcc33, #ff6699);
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: translateX(-50%);
 }
 
 .ctaButton:hover {
-  background-color: #e6e6e6;
-  color: #333333;
-  transform: scale(1.05);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0px 8px 30px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsiv design för mindre skärmar */
+.ctaButton:hover::before {
+  transform: translateX(0);
+}
+
+.ctaButton:active {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* För att lägga till en ikon i knapparna */
+.ctaButton::after {
+  content: "→";
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+.ctaButton:hover::after {
+  margin-left: 15px; /* Ikonen glider lite längre vid hover */
+}
+
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2.5rem;
@@ -99,23 +124,83 @@
 }
 
 @media (max-width: 480px) {
-  .hero {
-    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Anpassad ljus gradient för mindre skärmar */
-  }
-
   .heroTitle {
     font-size: 2rem;
-    color: #333333;
   }
 
   .subtitle {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    color: #666666;
   }
 
   .ctaButton {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
   }
+}
+.buttonContainer {
+  display: flex;
+  gap: 2rem; /* Ökar mellanrummet mellan knapparna */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem; /* Lägger till mer avstånd ovanför knapparna */
+}
+
+.ctaButton {
+  width: 300px; /* Gör alla knappar lika breda */
+  height: 50px; /* Gör alla knappar lika höga */
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+  display: flex; /* Centerar texten */
+  align-items: center; /* Centerar texten vertikalt */
+  justify-content: center; /* Centerar texten horisontellt */
+}
+
+.ctaButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffcc33, #ff6699);
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.ctaButton:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 30px rgba(255, 255, 255, 0.3);
+}
+
+.ctaButton:hover::before {
+  transform: translateX(0);
+}
+
+.ctaButton:active {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.ctaButton::after {
+  content: "→";
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+.ctaButton:hover::after {
+  margin-left: 15px;
 }

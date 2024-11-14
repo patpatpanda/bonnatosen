@@ -10,7 +10,7 @@ export default function HomePage() {
     <div>
      
       <Hero />
-    
+      <Footer/>
     </div>
   );
 }

@@ -3,7 +3,7 @@
 
 import styles from './Hero.module.css';
 import Link from 'next/link';
-
+import Footer from '../Footer/Footer';
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -24,7 +24,10 @@ export default function Hero() {
             <button className={styles.ctaButton}>Bonnatösens Event & Catering</button>
           </Link>
         </div>
+       
       </div>
+     
     </section>
+  
   );
 }

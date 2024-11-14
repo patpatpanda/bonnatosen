@@ -19,10 +19,10 @@ export default function Footer() {
         <div className={styles.navLinks}>
           <h3>Snabblänkar</h3>
           <Link href="/" className={styles.navLink}>Hem</Link>
-          <Link href="#about" className={styles.navLink}>Om Oss</Link>
+          <Link href="/about" className={styles.navLink}>Om Oss</Link>
           <Link href="/burgare" className={styles.navLink}>Burgare</Link>
           <Link href="/mackor" className={styles.navLink}>Mackor</Link>
-          <Link href="/contact" className={styles.navLink}>Kontakt</Link>
+          
         </div>
         
         {/* Sociala Medier */}
