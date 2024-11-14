@@ -59,7 +59,7 @@
 
 .historyImage {
   flex: 1;
-  max-width: 250px; /* Mindre bildstorlek */
+  max-width: 500px; /* Mindre bildstorlek */
   width: 100%;
   height: auto;
   border-radius: 10px;

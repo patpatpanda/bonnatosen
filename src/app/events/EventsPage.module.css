@@ -1,7 +1,7 @@
 /* app/events/EventsPage.module.css */
 
 .eventsPageContainer {
-  margin-top: 6rem; /* Justera värdet efter behov */
+  /* Justera värdet efter behov */
   padding: 3rem 2rem;
   text-align: center;
   background: linear-gradient(135deg, #f9f1e9, #fef3d7);

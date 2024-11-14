@@ -2,9 +2,13 @@
 body {
   margin: 0;
   padding: 0;
-
-  
+  overflow-x: hidden; /* Förhindrar horisontell scroll */
+  width: 100vw; /* Säkerställer att kroppens bredd alltid är skärmbredden */
 }
+html, body {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {

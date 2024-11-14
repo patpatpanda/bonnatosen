@@ -7,12 +7,12 @@
 
 /* Hero-sektion med ikon */
 .heroSection {
-  background-color: #fdf4e3; /* Ljus beige för en mjuk känsla */
+  background-color: #f3f4ed; /* Ljus grönaktig ton för att passa mackor */
   padding: 6rem 2rem;
   text-align: center;
-  color: #333; /* Neutral textfärg */
+  color: #3e4c3c; /* Naturlig grön färg för text */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid #ebd6b9; /* Liknande ton för avdelning */
+  border-bottom: 5px solid #b2c8a8; /* Matchande grön ton för avdelning */
 }
 
 .heroContent {
@@ -30,13 +30,13 @@
 .heroTitle {
   font-size: 3rem;
   font-weight: bold;
-  color: #d19a66; /* Varm ton */
+  color: #78997b; /* Jordnära grön ton */
 }
 
 .heroText {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: #555; /* Ljusare neutral textfärg */
+  color: #5e7261; /* Ljusare grön ton för text */
 }
 
 /* Historien-sektion */
@@ -44,7 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 3rem 2rem;
-  background-color: #fdf4e3;
+  background-color: #f3f4ed;
 }
 
 .historyText {
@@ -52,7 +52,7 @@
   padding: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #5e7261;
 }
 
 .historyVideo {
@@ -65,7 +65,7 @@
 
 /* Meny-sektion */
 .menuSection {
-  background-color: #fdf4e3;
+  background-color: #f3f4ed;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -73,7 +73,7 @@
 .menuTitle {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #333;
+  color: #3e4c3c;
   margin-bottom: 2rem;
 }
 
@@ -87,7 +87,7 @@
 .menuItem {
   width: 280px;
   padding: 1.5rem;
-  background-color: #f9e9d1; /* Enhetlig ljus ton */
+  background-color: #dfe4d6; /* Naturlig ljus ton för kort */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -99,18 +99,18 @@
 
 .menuItem h3 {
   font-size: 1.5rem;
-  color: #d19a66;
+  color: #78997b;
   margin-bottom: 0.5rem;
 }
 
 .menuItem p {
   font-size: 1rem;
-  color: #555;
+  color: #5e7261;
 }
 
 /* Catering och sociala medier */
 .cateringSection {
-  background-color: #d19a66; /* En starkare varm ton för kontrast */
+  background-color: #78997b; /* Starkare grön ton för kontrast */
   padding: 3rem 2rem;
   text-align: center;
   color: #fff;
@@ -121,7 +121,7 @@
   padding: 0.8rem 1.5rem;
   font-size: 1.2rem;
   color: #fff;
-  background-color: #4a4a4a; /* Mörkare knappfärg för bättre kontrast */
+  background-color: #3e4c3c; /* Mörkare knappfärg för bättre kontrast */
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -131,7 +131,7 @@
 }
 
 .cateringButton:hover {
-  background-color: #333; /* En mörkare ton vid hover */
+  background-color: #2e3c2c; /* En mörkare ton vid hover */
 }
 
 .socialMediaText {
@@ -184,12 +184,13 @@
     font-size: 0.9rem;
   }
 }
+
 /* Historien-sektion */
 .historySection {
   display: flex;
   flex-wrap: wrap;
   padding: 3rem 2rem;
-  background-color: #fdf4e3;
+  background-color: #f3f4ed;
 }
 
 .historyText {
@@ -197,12 +198,12 @@
   padding: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #5e7261;
 }
 
 .historyImage {
   flex: 1;
-  max-width: 300px; /* Begränsar storleken på bilden */
+  max-width: 500px; /* Begränsar storleken på bilden */
   width: 100%;
   height: auto;
   border-radius: 10px;

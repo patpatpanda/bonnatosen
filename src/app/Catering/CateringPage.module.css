@@ -3,7 +3,7 @@
 /* app/catering/CateringPage.module.css */
 
 .cateringPageContainer {
-  margin-top: 6rem; /* Justera värdet efter behov */
+  
   padding: 3rem 2rem;
   text-align: center;
   background: linear-gradient(135deg, #f9f1e9, #fef3d7);
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  
 }
 
 .pageTitle {

@@ -1,36 +1,12 @@
 // src/components/Hero/Hero.js
 "use client";
 
-import { useRef, useEffect } from 'react';
 import styles from './Hero.module.css';
 import Link from 'next/link';
 
 export default function Hero() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.play().catch((error) => {
-        console.error("Error playing the video:", error);
-      });
-    }
-  }, []);
-
   return (
     <section className={styles.hero}>
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        playsInline
-        loop
-        className={styles.backgroundVideo}
-      >
-        <source src="/images/set.mp4" type="video/mp4" />
-        Din webbläsare stöder inte videouppspelning.
-      </video>
-
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.heroTitle}>Välkommen till Bonnatösen!</h1>
