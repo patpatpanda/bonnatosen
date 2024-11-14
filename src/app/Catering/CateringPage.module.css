@@ -1,51 +1,57 @@
-/* app/catering/CateringPage.module.css */
-
-/* app/catering/CateringPage.module.css */
-
 .cateringPageContainer {
-  
   padding: 3rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #f9f1e9, #fef3d7);
+  background: linear-gradient(135deg, #fffbf2, #fbe7d3);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  font-family: 'Roboto', sans-serif;
 }
 
 .pageTitle {
-  font-size: 2.5rem;
-  color: #4a4a4a;
-  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  color: #d37f2c;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pageDescription {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #555;
   max-width: 700px;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .menuSection, .bookingSection {
   width: 100%;
   max-width: 800px;
-  background-color: #fff;
-  border-radius: 12px;
+  background-color: #ffffff;
+  border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuSection:hover, .bookingSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #b5651d;
-  margin-bottom: 1rem;
-  font-family: 'Georgia', serif;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
   text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .menuList {
@@ -53,12 +59,12 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .menuItem {
   background-color: #fffbf2;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -70,38 +76,49 @@
 }
 
 .menuItem h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #d37f2c;
   margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .menuItem p {
   font-size: 1rem;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .bookingInfo, .contactInfo {
   font-size: 1.2rem;
   color: #4f4f4f;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
 }
 
 .contactInfo {
   font-weight: bold;
-  color: #b5651d;
+  color: #d37f2c;
   margin-top: 0.5rem;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
   .pageTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .pageDescription {
-    font-size: 1.2rem;
-    padding: 0 1rem;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
   }
 
   .sectionTitle {
@@ -109,11 +126,11 @@
   }
 
   .menuItem h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .menuItem p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .bookingInfo, .contactInfo {
@@ -123,11 +140,11 @@
 
 @media (max-width: 480px) {
   .pageTitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .pageDescription {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .menuSection, .bookingSection {
@@ -143,7 +160,7 @@
   }
 
   .menuItem p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .bookingInfo, .contactInfo {

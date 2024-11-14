@@ -1,12 +1,19 @@
-// src/components/Hero/Hero.js
 "use client";
 
+import { useEffect, useState } from "react";
 import styles from './Hero.module.css';
 import Link from 'next/link';
-import Footer from '../Footer/Footer';
+
 export default function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 100); // Fördröjning för effekten
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${isVisible ? styles.fadeIn : ''}`}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.heroTitle}>Välkommen till Bonnatösen!</h1>
@@ -24,10 +31,7 @@ export default function Hero() {
             <button className={styles.ctaButton}>Bonnatösens Event & Catering</button>
           </Link>
         </div>
-       
       </div>
-     
     </section>
-  
   );
 }

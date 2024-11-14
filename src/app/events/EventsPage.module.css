@@ -1,34 +1,32 @@
-/* app/events/EventsPage.module.css */
-
 .eventsPageContainer {
-  /* Justera värdet efter behov */
   padding: 3rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #f9f1e9, #fef3d7);
+  background: linear-gradient(135deg, #f9f1e9, #fce9d4);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pageTitle {
-  font-size: 2rem;
-  color: #4a4a4a;
+  font-size: 3rem;
+  color: #b5651d;
   margin-bottom: 1.5rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .pageDescription {
   font-size: 1.4rem;
   color: #555;
   margin-bottom: 2.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  max-width: 700px;
+  line-height: 1.8;
+  padding: 0 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .eventsList {
@@ -36,43 +34,92 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
 
 .eventCard {
-  background-color: #fffcf7;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fffdf8;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   width: 100%;
-  max-width: 600px;
-  text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .eventCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  background-color: #fff0e6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: #ffe8d9;
 }
 
 .eventTitle {
   font-size: 2rem;
-  color: #b5651d;
-  margin-bottom: 0.5rem;
-  font-family: 'Georgia', serif;
-  font-weight: 700;
+  color: #d37f2c;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .eventDate, .eventLocation {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 0.5rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .eventDescription {
   font-size: 1.2rem;
   color: #4f4f4f;
-  line-height: 1.5;
-  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+
+  .pageDescription {
+    font-size: 1.3rem;
+  }
+
+  .eventCard {
+    padding: 1.5rem;
+  }
+
+  .eventTitle {
+    font-size: 1.8rem;
+  }
+
+  .eventDate, .eventLocation {
+    font-size: 1rem;
+  }
+
+  .eventDescription {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .pageDescription {
+    font-size: 1.2rem;
+  }
+
+  .eventCard {
+    padding: 1.2rem;
+  }
+
+  .eventTitle {
+    font-size: 1.6rem;
+  }
+
+  .eventDescription {
+    font-size: 1rem;
+  }
 }

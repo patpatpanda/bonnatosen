@@ -18,22 +18,26 @@ export default function BonnatosensMackor() {
         </p>
       </section>
 
-      {/* Historien bakom Bonnatösens Mackor med video */}
       <section className={styles.historySection}>
-  <div className={styles.historyText}>
-    <p>
-      Bonnatösens Mackor grundades av en slump, men snabbt växte vår passion för att servera riktigt goda mackor och fika. Med inspiration från USA och en dos svensk kärlek är våra mackor perfekta för alla tillfällen.
-    </p>
-    <p>
-      Idag finns vi i Bryggeriområdet i Nora, där vi erbjuder allt från frukostmackor till rejäla lunchalternativ. Vårt fokus ligger på att använda lokala råvaror och skapa smaker som får dig att längta efter mer!
-    </p>
+  <div className={styles.historyContent}>
+    <div className={styles.historyText}>
+      <p>
+        Bonnatösens Mackor grundades av en slump, men snabbt växte vår passion för att servera riktigt goda mackor och fika. Med inspiration från USA och en dos svensk kärlek är våra mackor perfekta för alla tillfällen.
+      </p>
+      <p>
+        Idag finns vi i Bryggeriområdet i Nora, där vi erbjuder allt från frukostmackor till rejäla lunchalternativ. Vårt fokus ligger på att använda lokala råvaror och skapa smaker som får dig att längta efter mer!
+      </p>
+    </div>
+    <div className={styles.historyImageWrapper}>
+      <img
+        src="/images/mrmacka.jpg" /* Ersätt med din bilds sökväg */
+        alt="Bonnatösens Mackor historia"
+        className={styles.historyImage}
+      />
+    </div>
   </div>
-  <img
-    src="/images/lol.jpg" /* Ersätt med din bilds sökväg */
-    alt="Bonnatösens Mackor historia"
-    className={styles.historyImage}
-  />
 </section>
+
 
 
       {/* Utbud-sektion */}

@@ -20,19 +20,23 @@ export default function BonnatosensBurgare() {
 
       {/* Historien bakom Bonnatösens Burgare med video */}
       <section className={styles.historySection}>
-  <div className={styles.historyText}>
-    <p>
-      Bonnatösens Burgare grundades av en slump år 2021 då vi (Oskar & Hanna) sålde smashed burgers på Hannas föräldrars gård under Bergslagens loppishelg...
-    </p>
-    <p>
-      Idag har Bonnatösens Burgare sin fasta punkt på vår nya gård som ligger precis i slutet av Flåsjön. Vi har hållit öppet några helger om året, men vi märker att efterfrågan är så stor...
-    </p>
+  <div className={styles.historyContent}>
+    <div className={styles.historyText}>
+      <p>
+        Bonnatösens Burgare grundades av en slump år 2021 då vi (Oskar & Hanna) sålde smashed burgers på Hannas föräldrars gård under Bergslagens loppishelg...
+      </p>
+      <p>
+        Idag har Bonnatösens Burgare sin fasta punkt på vår nya gård som ligger precis i slutet av Flåsjön. Vi har hållit öppet några helger om året, men vi märker att efterfrågan är så stor...
+      </p>
+    </div>
+    <div className={styles.historyImageWrapper}>
+      <img
+        src="/images/mrburgare.jpg" /* Ersätt med din bild */
+        alt="Bonnatösens Burgare historia"
+        className={styles.historyImage}
+      />
+    </div>
   </div>
-  <img
-    src="/images/lol.jpg" /* Ersätt med din bild */
-    alt="Bonnatösens Burgare historia"
-    className={styles.historyImage}
-  />
 </section>
 
       {/* Menysektion */}

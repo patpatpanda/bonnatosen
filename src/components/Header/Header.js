@@ -47,10 +47,12 @@ export default function Header() {
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
           <Link href="/" onClick={closeMenu}>Hem</Link>
           
-         
+          <Link href="/Catering" onClick={closeMenu}>Catering</Link>
+          <Link href="/burgare" onClick={closeMenu}>Burgare</Link>
+          <Link href="/mackor" onClick={closeMenu}>Mackor</Link>
           <Link href="/events" onClick={closeMenu}>Kommande event</Link>
           <Link href="/about" onClick={closeMenu}>Om oss</Link>
-          <Link href="/Catering" onClick={closeMenu}>Catering</Link>
+         
         </nav>
       </div>
     </header>

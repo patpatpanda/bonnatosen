@@ -8,7 +8,7 @@
   text-align: center;
   overflow: hidden;
   width: 100vw;
-  background-image: url('/images/solen.jpeg'); /* Path to your background image */
+  background-image: url('/images/aj.jpg'); /* Path to your background image */
   background-size: cover;
   background-position: center;
 }
@@ -203,4 +203,18 @@
 
 .ctaButton:hover::after {
   margin-left: 15px;
+}
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInEffect 1s ease-out;
 }
