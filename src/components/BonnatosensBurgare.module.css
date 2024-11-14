@@ -3,8 +3,7 @@
 .burgareContainer {
   font-family: 'Roboto', sans-serif;
   color: #4f4f4f;
-  margin-top: 1px;
-  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Hero-sektion med ikon */
