@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import styles from './Hero.module.css';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -14,6 +14,10 @@ export default function Hero() {
 
   return (
     <section className={`${styles.hero} ${isVisible ? styles.fadeIn : ''}`}>
+      <video className={styles.heroVideo} autoPlay loop muted>
+        <source src="/images/jalapeno.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.heroTitle}>Välkommen till Bonnatösen!</h1>

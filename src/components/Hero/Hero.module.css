@@ -8,9 +8,16 @@
   text-align: center;
   overflow: hidden;
   width: 100vw;
-  background-image: url('/images/aj.jpg'); /* Path to your background image */
-  background-size: cover;
-  background-position: center;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire hero section */
+  z-index: -1; /* Places the video behind other elements */
 }
 
 .overlay {
@@ -32,6 +39,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* Additional styles remain unchanged */
 
 .heroTitle {
   font-size: 3.5rem;
@@ -173,7 +182,7 @@
   left: -100%;
   width: 200%;
   height: 100%;
-  background: linear-gradient(135deg, #ffcc33, #ff6699);
+  background: linear-gradient(135deg, #ffcc33, #ffcc33);
   z-index: -1;
   transition: transform 0.5s ease;
   transform: translateX(-50%);
