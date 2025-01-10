@@ -50,8 +50,8 @@ export default function Header() {
           <Link href="/Catering" onClick={closeMenu}>Catering</Link>
           <Link href="/burgare" onClick={closeMenu}>Burgare</Link>
           <Link href="/mackor" onClick={closeMenu}>Mackor</Link>
-          <Link href="/events" onClick={closeMenu}>Kommande event</Link>
-          <Link href="/about" onClick={closeMenu}>Om oss</Link>
+       
+          
          
         </nav>
       </div>

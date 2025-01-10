@@ -12,7 +12,8 @@ export default function Footer() {
         {/* Kontaktinformation */}
         <div className={styles.contactInfo}>
           <h3>Kontakta Oss</h3>
-          <p>Email: <a href="mailto:info@bonnatosen.se" className={styles.navLink}>info@bonnatosen.se</a></p>
+          <p>Email: <a href="mailto:info@bonnatosen.se" className={styles.navLink}>Bonnatosensburgare@gmail.com</a></p>
+          <p className={styles.contactInfo}>📞 Telefon: 0046 76 879 59 35</p>
         </div>
         
         {/* Navigeringslänkar */}
