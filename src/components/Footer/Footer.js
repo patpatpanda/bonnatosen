@@ -16,16 +16,7 @@ export default function Footer() {
           <p className={styles.contactInfo}>📞 Telefon: 0046 76 879 59 35</p>
         </div>
         
-        {/* Navigeringslänkar */}
-        <div className={styles.navLinks}>
-          <h3>Snabblänkar</h3>
-          <Link href="/" className={styles.navLink}>Hem</Link>
-          <Link href="/about" className={styles.navLink}>Om Oss</Link>
-          <Link href="/burgare" className={styles.navLink}>Burgare</Link>
-          <Link href="/mackor" className={styles.navLink}>Mackor</Link>
-          
-        </div>
-        
+       
         {/* Sociala Medier */}
         <div className={styles.socialMedia}>
           <h3>Följ Oss</h3>
