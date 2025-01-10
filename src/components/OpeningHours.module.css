@@ -1,0 +1,36 @@
+.openingHoursContainer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.openingHoursContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.socialLinks a {
+  display: block;
+  font-size: 1.2rem;
+  color: #0073e6;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.socialLinks a:hover {
+  text-decoration: underline;
+}
